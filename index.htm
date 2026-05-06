@@ -7,6 +7,7 @@
     <link href="src/output.css" rel="stylesheet">
     <link rel="stylesheet" href="src/font.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         html{
             scroll-behavior: smooth;
@@ -44,7 +45,18 @@
             <button class="text-white w-[80px] font-[Geist] text-[14px] h-[36px] hover:bg-[#f8442c] duration-300 ease-in-out rounded-[7px]">Sign In</button>
             <button class="w-[80px] bg-[#f8442c] hover:bg-[#e03e29] duration-300 ease-in-out h-[36px] font-[Geist] text-[14px] rounded-[7px] flex justify-center items-center text-white">Sign Up </button>
            </div>
+           <div class="md:hidden lg:hidden"><span onclick="OpenMenu()" class="text-[1.7em] font-[700]"><i id="Mark" class="fa-solid fa-bars  text-[#f8442c]"></i></span></div>
+           
         </section>
+
+        <div id="Menubar" class="w-[100vw] h-[0px] overflow-hidden bg-[#f8442c] fixed top-[80px] md:hidden lg:hidden z-45">
+          <ul class="flex flex-col items-center gap-2 pt-[50px] ">
+            <li class="text-[#fff] font-[Geist] hover:text-white duration-300 ease-in-out">How It Works</li>
+            <li class="text-[#fff] font-[Geist] hover:text-white duration-300 ease-in-out">Documents</li>
+            <li class="text-[#fff] font-[Geist] hover:text-white duration-300 ease-in-out">Pricing</li>
+            <li class="text-white flex justify-center items-center gap-2 bg-black w-[100vw]  py-2 mt-4"><span><img class="w-[50px]" src="img/docgen-ai-logo.svg" alt="docgen-ai-logo"/></span><span>DocGenAI</span></li>
+        </ul>
+        </div>
     </header>
     <main class="lg:pt-[60px] pt-[110px] ">
         <section>
@@ -375,6 +387,6 @@
         <p class="text-center text-[#6a6a6a] font-[Geist] font-[500] px-3 lg:px-0 pt-7">© 2025 DocGenAI. All rights reserved. This tool does not replace a licensed attorney .</p>
         <p class="text-center text-[#6a6a6a] font-[Geist] font-[500] px-3 lg:px-0">.Developed by <span class="text-[#3f3c3c] hover:text-black duration-300 ease-in-out">Codescandy</span> • Distributed by <span class="text-[#3f3c3c]  hover:text-black duration-300 ease-in-out">ThemeWagon</span></p>
     </footer>
-    
+    <script src="app.js"></script>
 </body>
 </html>
